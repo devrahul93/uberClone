@@ -31,9 +31,11 @@ const Search = () => {
                 Saved Places
             </SavedPlaces>
             {/* confirm location */}
-            <ConfirmLocation>
-                Confirm Location
-            </ConfirmLocation>
+            <Link href='/confirm'>
+             <ConfirmLocation>
+                Confirm Location          
+             </ConfirmLocation>
+            </Link>
         </Wrapper>
     )
 }
@@ -47,7 +49,7 @@ bg-white px-4
 `
 
 const BackButton=tw.img`
-h-12
+h-12 cursor-pointer
 `
 
 const InputContainer=tw.div`
@@ -89,5 +91,5 @@ bg-gray-400 w-10 h-10 p-2 rounded-full mr-2
 `
 
 const ConfirmLocation=tw.div`
-bg-black text-white text-center p-2 m-2 rounded-full
+bg-black text-2xl text-white text-center p-2 mt-2 mx-4 rounded-full cursor-pointer
 `

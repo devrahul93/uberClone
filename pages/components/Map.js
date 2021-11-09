@@ -11,8 +11,12 @@ const Map = () => {
           container: 'map',
           style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
           center: [78.9629,20.5937],
-          zoom:4,
+          zoom:3,
           });
+
+          const marker1 = new mapboxgl.Marker()
+          .setLngLat([77.1025,28.7041])
+          .addTo(map);
       },[])
 
 
